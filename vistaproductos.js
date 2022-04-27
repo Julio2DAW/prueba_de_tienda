@@ -33,7 +33,6 @@ export class VistaProductos{
             <button>Añadir</button>
             </div>
          */
-        
         for (let producto of productos) {
 
             let div = document.createElement('div')

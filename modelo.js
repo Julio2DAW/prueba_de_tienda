@@ -1,9 +1,13 @@
+import { Producto } from "./productos.js"
+/**
+ * Clase del Modelo
+ */
 export class Modelo{
 
     constructor(){
 
         this.productos = []
-        this.cargar
+        this.cargar()
     }
 
     cargar(){
@@ -16,7 +20,7 @@ export class Modelo{
     }
 
     getProductos(){
-
+        
         return this.productos
     }
 }
