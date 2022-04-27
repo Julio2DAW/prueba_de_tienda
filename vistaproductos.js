@@ -40,10 +40,25 @@ export class VistaProductos{
             div.classList.add('producto')
             let p = document.createElement('p')
             div.appendChild(p)
-            p.textContent = producto
+            p.textContent = producto.nombre
+
+            let p2 = document.createElement('p')
+            div.appendChild(p2)
+            p2.textContent = producto.precio
+
+            let p3 = document.createElement('p')
+            div.appendChild(p3)
+            p3.textContent = producto.imagen
+
             let button = document.createElement('button')
             div.appendChild(button)
             button.textContent = 'Añadir'
+            button.onclick = this.anadirCarrito.bind(this, producto)
         }
+    }
+
+    anadirCarrito(producto){
+
+        this.controlador.anadirCarrito(producto)
     }
 }

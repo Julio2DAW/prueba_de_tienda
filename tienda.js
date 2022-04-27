@@ -31,6 +31,12 @@ class Tienda{
         this.vistaCarrito.mostrar(false)
         this.vistaProductos.mostrar(true)
     }
+
+    anadirCarrito(producto){
+
+        this.modelo.carrito.push(producto)
+        this.vistaProductos.setNumProductosCarrito(this.modelo.carrito.length)
+    }
 }
 
 new Tienda()
