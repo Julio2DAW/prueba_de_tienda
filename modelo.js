@@ -7,7 +7,9 @@ export class Modelo{
     constructor(){
 
         this.productos = []
+        this.carrito = []
         this.cargar()
+        
     }
 
     cargar(){
@@ -20,7 +22,7 @@ export class Modelo{
     }
 
     getProductos(){
-        
+
         return this.productos
     }
 }
